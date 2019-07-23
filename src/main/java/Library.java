@@ -24,4 +24,8 @@ public class Library {
     public boolean canAddBook() {
         return this.capacity > countBooks();
     }
+
+    public Book removeBook() {
+        return this.bookStock.remove(0);
+    }
 }
